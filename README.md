@@ -1,5 +1,6 @@
 # dcos-rexray
-Play with persistent storage on DCOS
+
+DCOS with EMC {code} RexRay & DVDI for persistent storage
 
 ## Overview
 This walkthrough is meant to be used for those who want to play with DCOS 1.7 (not the Enterprise Ed). 
