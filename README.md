@@ -74,7 +74,7 @@ DVDI stands for Docker Volume Driver Interface. To understand it better, I recom
 
 DCOS 1.7 comes with Mesos 0.28.1 hence this command should get you the binaries:
 
-`curl -O https://github.com/emccode/mesos-module-dvdi/releases/download/v0.4.2/libmesos_dvdi_isolator-0.28.1.so`
+`curl -L -O https://github.com/emccode/mesos-module-dvdi/releases/download/v0.4.2/libmesos_dvdi_isolator-0.28.1.so`
 
 For me it didn't work. First there is a problem with calling the DVDCLI on CoreOS, for which I opened an issue (https://github.com/emccode/mesos-module-dvdi/issues/99). I also got a `invalid ELF header` when trying to use the above binaries. Then I decided to build it myself. My build is publicly available from an S3 location: 
 
