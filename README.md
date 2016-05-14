@@ -30,6 +30,8 @@ To ssh on the master:
 
 `curl -sSL https://dl.bintray.com/emccode/rexray/install | sh -s stable`
 
+This walkthrough should work with rexray 0.3.3. 
+
 Create and edit the config.yml:
 
 `sudo vi /etc/rexray/config.yml`
