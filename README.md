@@ -2,6 +2,11 @@
 
 DCOS with EMC {code} RexRay & DVDI for persistent storage
 
+DCOS v1.7
+DVDCLI v0.2.0
+DVDI v0.4.2
+rexray v0.3.3
+
 ## Overview
 This walkthrough is meant to be used for those who want to play with DCOS 1.7 (not the Enterprise Ed). 
 Everything described here is for demo purposes and purely experimental. 
