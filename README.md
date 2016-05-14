@@ -98,7 +98,7 @@ For me it didn't work. First there is a problem with calling the DVDCLI on CoreO
 
 `curl -O https://s3.amazonaws.com/dcos-mitel/libmesos_dvdi_isolator-0.28.1.so`
 
-If you want to build it yourself, here is how I did it:
+If you want to build it yourself, here is how I did it (right on one of the Mesos agents):
 
 ```bash
 # clone the git repo:
