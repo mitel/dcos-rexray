@@ -144,7 +144,7 @@ Now it should make some more sense to you why DVDI/rexray is so important - stor
 
 Stop the Mesos Agent:
 
-`sudo systemctl start dcos-mesos-slave.service`
+`sudo systemctl stop dcos-mesos-slave.service`
 
 After all these modifications, starting the service via systemctl fails for some reason I could not identify yet, hence I had to start it manually once, like this:
 
