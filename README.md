@@ -113,7 +113,7 @@ Add the library to the list in mesos-slave-modules.json, following the json synt
 ```json
 {
   "libraries": [
-    { ... }
+    { ... },
     {
       "file": "/home/core/dvdi/libmesos_dvdi_isolator-0.28.1.so",
       "modules": [
