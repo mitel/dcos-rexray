@@ -179,8 +179,8 @@ https://mesosphere.github.io/marathon/docs/external-volumes.html
 Quite frustrating :) So I modified the CloudFormation template to use a newer CoreOS version that comes with Docker 1.9.1.
 Check it out and/or use it from
 
-https://s3.amazonaws.com/dcos-mitel/dcos_single_master_23.04_centos_899.17.0.json 
+https://s3.amazonaws.com/dcos-mitel/dcos_single_master_23.04_coreos_899.17.0.json 
 
-You can provide this link when deploying DCOS on AWS.
+You can provide this link when deploying DCOS on AWS (US-East-1 region only).
 
 Have fun!
