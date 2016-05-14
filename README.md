@@ -154,6 +154,10 @@ It should start succesfully (check your `mesos-slave` executable location, might
 
 `sudo systemctl start dcos-mesos-slave.service`
 
+Verify the service status:
+
+`sudo systemctl status dcos-mesos-slave.service`
+
 Now exit the Mesos agent session and ssh on the master to setup Marathon:
 	
 `dcos node ssh --master-proxy --leader`
