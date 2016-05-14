@@ -40,10 +40,26 @@ Create and edit the config.yml:
 rexray:
   storageDrivers:
   - ec2
+  logLevel: info
   volume:
     remove:
       disable: true
+    create:
+      disable: false
+    mount:
+      preempt: true
+    unmount:
+      ignoreUsedCount: false
+    path:
+      disableCache: true
+linux:
+  volume:
+    rootPath: /data
+    fileMode: 0700
 ```
+
+Check the config options here: http://rexray.readthedocs.io/en/stable/user-guide/config/#advanced-configuration
+
 Test it. You should see the available EBS volumes:
 
 `rexray volume ls`
