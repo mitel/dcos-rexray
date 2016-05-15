@@ -54,7 +54,7 @@ rexray:
     mount:
       preempt: true
     unmount:
-      ignoreUsedCount: false
+      ignoreUsedCount: true
     path:
       disableCache: true
 linux:
@@ -203,11 +203,13 @@ After running the above steps you should be able to run stateful apps using the 
 https://mesosphere.github.io/marathon/docs/external-volumes.html 
 
 ..but not yet the Docker containerizer due to the Docker version used on the CoreOS version used by DCOS 1.7.
-Quite frustrating :) So I modified the CloudFormation template to use a newer CoreOS version that comes with Docker 1.9.1.
+Quite frustrating :) So I modified the CloudFormation template to use a newer CoreOS version that comes with Docker > 1.8.
 Check it out and/or use it from
 
-https://s3.amazonaws.com/dcos-mitel/dcos_single_master_23.04_coreos_899.17.0.json 
+https://s3.amazonaws.com/dcos-mitel/dcos_single_master_23.04_coreos_899.17.0.json (docker 1.9.1)
 
-You can provide this link when deploying DCOS on AWS (US-East-1 region only).
+https://s3.amazonaws.com/dcos-mitel/dcos_single_master_23.04_coreos_1010.3.0.json (docker 1.10.3)
+
+You can provide this link when deploying DCOS on AWS (US-East-1 region only - I used an AMI available in that region).
 
 Have fun!
