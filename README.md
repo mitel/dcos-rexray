@@ -185,7 +185,7 @@ Now exit the Mesos agent session and ssh on the master to setup Marathon:
 
 Add `external_volumes` to `--enable_features` list:
 
-`sudo vi /etc/systemd/system/dcos-marathon.service`
+`sudo systemctl edit --full dcos-marathon.service`
 
 It should look like this now:
 
@@ -193,9 +193,7 @@ It should look like this now:
 
 Restart Marathon:
 
-`sudo systemctl daemon-reload`
-
-`sudo systemctl restart dcos-marathon.service`
+`sudo systemctl reload-or-restart dcos-marathon.service`
 
 #### Even more tweaking
 After running the above steps you should be able to run stateful apps using the Mesos containerizer using the example here:
