@@ -63,6 +63,8 @@ linux:
     fileMode: 0700
 ```
 
+This particular setup will pre-emptively detach any existing attachments to other instances before attempting a mount.
+
 Check the config options here: http://rexray.readthedocs.io/en/stable/user-guide/config/#advanced-configuration
 
 Test it. You should see the available EBS volumes:
@@ -92,7 +94,7 @@ This will unmount the volume:
 
 `sudo dvdcli unmount --volumedriver=rexray --volumename=test1`
 
-#### Install DVDI on the Mesos agents
+#### Install mesos-module-dvdi on the Mesos agents
 DVDI stands for Docker Volume Driver Interface. To understand it better, I recommend checking this material: https://github.com/emccode/mesos-module-dvdi/blob/master/DVDI%20Isolator%20Overview%20and%20Roadmap.md 
 
 DCOS 1.7 comes with Mesos 0.28.1 hence this command should get you the binaries:
