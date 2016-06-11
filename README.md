@@ -18,7 +18,7 @@ I have experimented with modifying the original DCOS CloudFormation template to 
 
 ## Install the components
 
-To ssh on each Mesos agent and on the master(s) I took the Mesos you may want to check this link:
+To ssh on each Mesos agent and on the master(s), you may want to check this link:
 
 https://docs.mesosphere.com/administration/sshcluster/ 
 
