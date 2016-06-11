@@ -8,7 +8,7 @@ DCOS with EMC {code} RexRay & DVDI for persistent storage
 * rexray v0.3.3
 
 ## Overview
-This walkthrough is meant to be used for those who want to play with DCOS 1.7 (not the Enterprise Ed). 
+This walkthrough is meant to be used by those who want to play with DCOS 1.7 (not the Enterprise Ed). 
 Everything described here is for demo purposes and purely experimental. 
 
 Tested on AWS with DCOS Community Edition, one Mesos Master.
