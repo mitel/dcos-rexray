@@ -181,7 +181,7 @@ Verify the service status:
 
 `sudo systemctl status dcos-mesos-slave.service`
 
-Now exit the Mesos agent session and ssh on the master to setup Marathon:
+#### Setup Marathon for persistent volumes:
 	
 `dcos node ssh --master-proxy --leader`
 
@@ -198,9 +198,7 @@ Restart Marathon:
 `sudo systemctl reload-or-restart dcos-marathon.service`
 
 #### Even more tweaking
-After running the above steps you should be able to run stateful apps using the Mesos containerizer using the example here:
-
-https://mesosphere.github.io/marathon/docs/external-volumes.html 
+After running the above steps you should be able to run stateful apps using the Mesos containerizer.
 
 ..but not yet the Docker containerizer due to the Docker version used on the CoreOS version used by DCOS 1.7.
 Quite frustrating :) So I modified the CloudFormation template to use a newer CoreOS version that comes with Docker > 1.8.
